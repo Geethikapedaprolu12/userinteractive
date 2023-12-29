@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    #interactive-container {
+      text-align: center;
+    }
+
+    #message {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+  <title>User Interactive Website</title>
+</head>
+<body>
+
+<div id="interactive-container">
+    <h3>Enter name:</h3>
+    <input>
+    <button>Next</button>
+    <h3>Enter age:</h3>
+    <input>
+    <button>submit</button><br><br>
+
+  <button onclick="displayMessage()">display Message</button>
+  <button onclick="showMessageAlert()">Show Alert</button>
+  <p id="message">Hello, welcome to Javascript</p>
+</div>
+
+<script>
+  function displayMessage() {
+    const messageElement = document.getElementById('message');
+    messageElement.textContent = 'Changing the message from "javascript to text"';
+  }
+
+  function showMessageAlert() {
+    alert('Please fill all the required data')
+  } 
+</script>
+
+</body>
+</html>
